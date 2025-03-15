@@ -76,5 +76,29 @@ The CAP Theorem, introduced by Eric Brewer, states that in a distributed system,
 
 <br> ![CAP Theorem](https://github.com/YasinKar/System-Design/blob/main/chapter-01/CAP_Theorem.webp)
 
+## Consistency Models (Strong, Eventual, Weak Consistency)
+In distributed systems, consistency models define how updates to data are propagated across different nodes and what guarantees the system provides regarding data visibility. The main types of consistency models are:
+
+- **Strong Consistency** – Every read operation always returns the most recent write. Once data is updated, all nodes immediately reflect the latest change.
+
+- **Eventual Consistency** – The system does not guarantee immediate consistency, but all nodes will eventually converge to the same state.
+
+- **Weak Consistency** – There is no guarantee that all nodes will see the latest update, even after some time.
+
+| Aspect                | Monolithic System | Distributed System |
+|----------------------|------------------|-------------------|
+| **Architecture**    | Single, unified application | Multiple independent services |
+| **Scalability**     | Limited; scaling requires duplicating the whole system | High; can scale individual components separately |
+| **Deployment**      | Easier, as everything is in one place | More complex, requiring orchestration tools (e.g., Kubernetes) |
+| **Development Speed** | Faster for small projects | Slower due to complexity and inter-service communication |
+| **Maintenance**     | Can become difficult as the codebase grows | Easier to maintain individual components |
+| **Fault Tolerance** | A failure in one part may crash the entire system | More resilient, failures in one service don’t affect others (if properly designed) |
+| **Performance**     | Can be efficient for small applications | Better suited for large-scale applications with high traffic |
+| **Flexibility**     | Less flexible; changing one part affects the whole system | More flexible; services can be modified independently |
+| **Technology Stack** | Typically uses a single technology stack | Allows different services to use different technologies |
+| **Security**        | Easier to secure since everything is in one place | More complex security due to multiple entry points |
+| **Cost**           | Lower initial cost but higher long-term maintenance cost | Higher initial investment but more cost-effective at scale |
+| **Time to Market**  | Faster for simple applications | Slower due to the need for managing multiple components |
+| **Examples**       | Traditional enterprise applications, CMS, ERP | Cloud-native applications, e-commerce, microservices-based platforms |
 
 
