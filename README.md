@@ -36,8 +36,13 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
 
 <br> -  [Chapter 04 - Caching](https://github.com/YasinKar/System-Design/tree/main/chapter-04)
 
-<br> -  [Chapter 05 - API design](https://github.com/YasinKar/System-Design/tree/main/chapter-05)
+<br> -  [Chapter 05 - Message Queues و Event-Driven Architecture](https://github.com/YasinKar/System-Design/tree/main/chapter-05)
 
-<br> -  [Chapter 06 - System security](https://github.com/YasinKar/System-Design/tree/main/chapter-06)
+<br> -  [Chapter 06 - API design](https://github.com/YasinKar/System-Design/tree/main/chapter-06)
 
-<br> -  [Chapter 07 - Monitoring & logging and error management](https://github.com/YasinKar/System-Design/tree/main/chapter-07)
+<br> -  [Chapter 07 - System security](https://github.com/YasinKar/System-Design/tree/main/chapter-07)
+
+<br> -  [Chapter 08 - Monitoring & logging and error management](https://github.com/YasinKar/System-Design/tree/main/chapter-08)
+
+
+***author*** : [Yasin Karbasi](https://github.com/YasinKar)
