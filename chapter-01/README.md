@@ -74,5 +74,7 @@ The CAP Theorem, introduced by Eric Brewer, states that in a distributed system,
     - SQL databases typically focus on Consistency rather than Availability.
 
 
+<br> ![CAP Theorem](https://github.com/YasinKar/System-Design/blob/main/chapter-01/CAP_Theorem.webp)
+
 
 
