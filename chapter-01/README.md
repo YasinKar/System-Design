@@ -30,7 +30,7 @@ in distributed systems, software is divided into independent and scalable compon
 
 - **Serverless Architecture** – Applications are executed in a cloud-based environment where resources are allocated dynamically, reducing infrastructure management overhead.
 
-## Monolithic vs. Distributed Systems Comparison
+### Monolithic vs. Distributed Systems Comparison
 
 | Aspect                | Monolithic System | Distributed System |
 |----------------------|------------------|-------------------|
@@ -90,5 +90,30 @@ In distributed systems, consistency models define how updates to data are propag
 | **Strong Consistency**    | Always the latest data | High latency | Banking, stock trading | Spanner, SQL (ACID-compliant) |
 | **Eventual Consistency**     | Data converges over time | Medium latency | Social media, DNS, CDN | DynamoDB, Cassandra |
 | **Weak Consistency**      | No guarantee of up-to-date data | Low latency | Video streaming, gaming | UDP-based systems |
+
+## Scalability (Vertical vs. Horizontal Scaling)
+Scalability in system design refers to the ability of a system to handle increased loads or to be expanded to accommodate growth. There are two main types of scalability: Vertical Scaling and Horizontal Scaling. Both have their strengths and weaknesses, and choosing between them depends on factors such as the architecture of the system, the type of load, and cost considerations.
+
+- **Vertical Scaling (Scaling Up)**
+Vertical scaling involves adding more power (CPU, RAM, storage) to an existing machine or server. In this approach, you scale by upgrading the existing hardware to handle a larger workload.
+Vertical scaling is often used for applications that are difficult to distribute or for workloads where a single machine can handle the task. This includes databases that require a single point of coordination or applications that rely on complex single-threaded operations.
+
+- **Horizontal Scaling (Scaling Out)**
+Horizontal scaling involves adding more machines or servers to distribute the load across multiple systems. Instead of upgrading a single server, you increase the number of servers in the system.
+This is typically used for systems designed for distributed computing or systems that need to handle large numbers of users concurrently, such as web applications, microservices, or cloud-based systems.
+
+# Comparison of Vertical Scaling vs Horizontal Scaling
+
+| Feature                   | **Vertical Scaling (Scaling Up)**                               | **Horizontal Scaling (Scaling Out)**                          |
+|---------------------------|-----------------------------------------------------------------|--------------------------------------------------------------|
+| **Definition**             | Adding more resources (CPU, RAM, storage) to an existing server. | Adding more machines or servers to distribute the load.       |
+| **Implementation Simplicity** | Easier, typically involves just upgrading hardware.            | More complex, requires designing a distributed architecture.  |
+| **Scalability**            | Limited by the physical hardware capacity.                      | Nearly unlimited, can scale by adding more servers.           |
+| **Use Case**               | Suitable for applications needing powerful hardware.            | Suitable for large, distributed systems handling high traffic. |
+| **Cost**                   | Costs increase as hardware is upgraded.                        | Can be more cost-effective by using cheaper, smaller servers. |
+| **Drawback**               | Limited by hardware upgrades.                                  | Complexity in managing data consistency and network latency.  |
+| **Fault Tolerance**        | Single point of failure—if the server fails, the system goes down. | Better fault tolerance with distributed systems.              |
+| **Database Considerations**| Suitable for centralized databases that require high performance. | Requires data partitioning (sharding) and distributed systems. |
+| **Development Simplicity** | Less complex, requires fewer changes to software and architecture. | Requires more complex design and distributed system management. |
 
 
