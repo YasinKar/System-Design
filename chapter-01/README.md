@@ -48,5 +48,31 @@ in distributed systems, software is divided into independent and scalable compon
 | **Time to Market**  | Faster for simple applications | Slower due to the need for managing multiple components |
 | **Examples**       | Traditional enterprise applications, CMS, ERP | Cloud-native applications, e-commerce, microservices-based platforms |
 
+## CAP Theorem (Consistency, Availability, Partition Tolerance)
+The CAP Theorem, introduced by Eric Brewer, states that in a distributed system, it is impossible to guarantee all three of the following properties simultaneously. A system can only achieve two out of the three:
+
+- **Consistency (C)** – Every node sees the same data at the same time. When an update occurs, all subsequent reads will return the latest data.
+
+- **Availability (A)** – The system always responds to requests, even if some nodes fail or some data is outdated.
+
+- **Partition Tolerance (P)** – The system can continue operating even if network failures cause some nodes to become unreachable.
+
+### Key Considerations in CAP Theorem
+- **Trade-off in distributed systems** – You must choose between Consistency, Availability, and Partition Tolerance, as achieving all three simultaneously is impossible.
+
+- **System classifications based on CAP**
+    - **CP (Consistency + Partition Tolerance)** – Ensures data consistency but may reject some requests during network failures. (e.g., MongoDB, HBase)
+    - **AP (Availability + Partition Tolerance)** – Guarantees responses but may return outdated or inconsistent data. (e.g., Cassandra, DynamoDB)
+    - **CA (Consistency + Availability)** – This combination is impossible in distributed systems since network failures (Partitions) are inevitable. However, it is achievable in non-distributed systems like traditional SQL databases (PostgreSQL, SQL Server).
+
+- **Impact on system design**
+  - If Consistency is a priority (e.g., banking systems), Availability may be reduced to prevent data inconsistency.
+  - If Availability is more important (e.g., social networks), Consistency may be sacrificed temporarily.
+
+- **Real-world implementations**
+    - Many NoSQL databases prioritize AP or CP over full consistency.
+    - SQL databases typically focus on Consistency rather than Availability.
+
+
 
 
