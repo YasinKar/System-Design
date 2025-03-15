@@ -117,3 +117,7 @@ This is typically used for systems designed for distributed computing or systems
 | **Development Simplicity** | Less complex, requires fewer changes to software and architecture. | Requires more complex design and distributed system management. |
 
 
+## On-Demand Virtualization Automation
+On-demand virtualization automation refers to the process of dynamically creating, managing, and terminating virtual machines (VMs) or containers based on real-time demand. This approach optimizes resource utilization, reduces costs, and enhances scalability without manual intervention.
+In this approach, we create or delete machines and allocate resources to them on demand using scripts.
+
