@@ -28,16 +28,16 @@ To ensure both speed and accuracy, we can implement a **queue-based matchmaking 
 By leveraging Redis, we improve matchmaking efficiency while reducing strain on the database. This ensures a fast, scalable, and accurate player grouping system.
 
 
-<br> -  [Chapter 01 - Basics of distributed systems](https://github.com/YasinKar/System-Design/tree/main/chapter_01)
+<br> -  [Chapter 01 - Basics of distributed systems](https://github.com/YasinKar/System-Design/tree/main/chapter-01)
 
-<br> -  [Chapter 02 - Networking](https://github.com/YasinKar/System-Design/tree/main/chapter_02)
+<br> -  [Chapter 02 - Networking](https://github.com/YasinKar/System-Design/tree/main/chapter-02)
 
-<br> -  [Chapter 03 - Storage and databases](https://github.com/YasinKar/System-Design/tree/main/chapter_03)
+<br> -  [Chapter 03 - Storage and databases](https://github.com/YasinKar/System-Design/tree/main/chapter-03)
 
-<br> -  [Chapter 04 - Caching](https://github.com/YasinKar/System-Design/tree/main/chapter_04)
+<br> -  [Chapter 04 - Caching](https://github.com/YasinKar/System-Design/tree/main/chapter-04)
 
-<br> -  [Chapter 05 - API design](https://github.com/YasinKar/System-Design/tree/main/chapter_05)
+<br> -  [Chapter 05 - API design](https://github.com/YasinKar/System-Design/tree/main/chapter-05)
 
-<br> -  [Chapter 06 - System security](https://github.com/YasinKar/System-Design/tree/main/chapter_06)
+<br> -  [Chapter 06 - System security](https://github.com/YasinKar/System-Design/tree/main/chapter-06)
 
-<br> -  [Chapter 07 - Monitoring & logging and error management](https://github.com/YasinKar/System-Design/tree/main/chapter_07)
+<br> -  [Chapter 07 - Monitoring & logging and error management](https://github.com/YasinKar/System-Design/tree/main/chapter-07)
