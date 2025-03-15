@@ -4,53 +4,49 @@
 in distributed systems, software is divided into independent and scalable components. These components and services collaborate to function as an integrated system. Typically, they are networked and communicate with each other to provide a unified service
 
 ### Features of distributed systems
-- Transparency – Users should not be aware that the system consists of multiple nodes. Transparency applies to access, location, migration, concurrency, and failure handling.
+- **Transparency** – Users should not be aware that the system consists of multiple nodes. Transparency applies to access, location, migration, concurrency, and failure handling.
 
-- Scalability – The system should efficiently accommodate an increasing number of nodes without performance degradation.
+- **Scalability** – The system should efficiently accommodate an increasing number of nodes without performance degradation.
 
-- Fault Tolerance – The system must continue functioning even if some nodes fail, ensuring high availability and reliability.
+- **Fault Tolerance** – The system must continue functioning even if some nodes fail, ensuring high availability and reliability.
 
-- Concurrency – Multiple processes or users should be able to interact with the system simultaneously without conflicts.
+- **Concurrency** – Multiple processes or users should be able to interact with the system simultaneously without conflicts.
 
-- Coordination – Nodes must synchronize and manage data and processing efficiently to maintain system integrity.
+- **Coordination** – Nodes must synchronize and manage data and processing efficiently to maintain system integrity.
 
-- Security – Authentication, authorization, and data protection mechanisms must be in place to prevent attacks and ensure secure communication.
+- **Security** – Authentication, authorization, and data protection mechanisms must be in place to prevent attacks and ensure secure communication.
 
-## Why System Design is Important?
-Imagine you are a software engineer tasked with designing a system for managing 10 million players, grouping them into teams of 10 based on their skill level. Given that an average of 10,000 players are online at any given time, querying the database each time a player comes online or goes offline to change it status would be inefficient. Additionally, real-time changes in player status could lead to inaccuracies in matchmaking.
+### Common Architectures in Distributed Systems
 
-### Optimized Approach
-To ensure both speed and accuracy, we can implement a **queue-based matchmaking system** using an **in-memory database like Redis**. Here’s how it works:
+- **Client-Server Architecture** – Clients send requests to a central server, which processes them and returns responses.
 
-- Players are placed into **skill-based queues** stored in Redis when they start matchmaking.
-- A **matchmaking service** continuously pulls players from these queues to form teams of 10.
-- If a queue lacks enough players, a **timeout mechanism** expands the skill range slightly to allow near-skill-level players to be grouped together.
-- **Redis Pub/Sub or WebSockets** can be used to track real-time player status changes, reducing database load and improving accuracy.
+- **Peer-to-Peer (P2P) Architecture** – Each node acts as both a client and a server, sharing resources directly without a central authority.
 
-### Comparison Table
+- **Microservices Architecture** – The system is divided into independent services, each handling a specific function, communicating via APIs.
 
-| Feature                   | Direct Database Querying | Queue-Based Matching with Redis |
-|---------------------------|-------------------------|--------------------------------|
-| **Performance**          | Slow, due to frequent DB queries | Fast, as Redis operates in-memory |
-| **Accuracy**             | Can lose accuracy due to real-time status changes | More accurate with Pub/Sub updates |
-| **Scalability**          | Limited, as database queries increase with players | Highly scalable with distributed Redis instances |
-| **Latency**              | High, as database operations take time | Low, as Redis fetches data in milliseconds |
-| **Flexibility**          | Hard to adjust matchmaking criteria dynamically | Supports dynamic skill-range adjustments with timeouts |
-| **Resource Usage**       | High database load | Efficient memory usage with minimal DB writes |
+- **Event-Driven Architecture** – Components communicate asynchronously by sending and responding to events rather than direct calls.
 
-By leveraging Redis, we improve matchmaking efficiency while reducing strain on the database. This ensures a fast, scalable, and accurate player grouping system.
+- **Service-Oriented Architecture (SOA)** – Services interact over a network using standardized protocols, promoting reusability and interoperability.
+
+- **Serverless Architecture** – Applications are executed in a cloud-based environment where resources are allocated dynamically, reducing infrastructure management overhead.
+
+## Monolithic vs. Distributed Systems Comparison
+
+| Aspect                | Monolithic System | Distributed System |
+|----------------------|------------------|-------------------|
+| **Architecture**    | Single, unified application | Multiple independent services |
+| **Scalability**     | Limited; scaling requires duplicating the whole system | High; can scale individual components separately |
+| **Deployment**      | Easier, as everything is in one place | More complex, requiring orchestration tools (e.g., Kubernetes) |
+| **Development Speed** | Faster for small projects | Slower due to complexity and inter-service communication |
+| **Maintenance**     | Can become difficult as the codebase grows | Easier to maintain individual components |
+| **Fault Tolerance** | A failure in one part may crash the entire system | More resilient, failures in one service don’t affect others (if properly designed) |
+| **Performance**     | Can be efficient for small applications | Better suited for large-scale applications with high traffic |
+| **Flexibility**     | Less flexible; changing one part affects the whole system | More flexible; services can be modified independently |
+| **Technology Stack** | Typically uses a single technology stack | Allows different services to use different technologies |
+| **Security**        | Easier to secure since everything is in one place | More complex security due to multiple entry points |
+| **Cost**           | Lower initial cost but higher long-term maintenance cost | Higher initial investment but more cost-effective at scale |
+| **Time to Market**  | Faster for simple applications | Slower due to the need for managing multiple components |
+| **Examples**       | Traditional enterprise applications, CMS, ERP | Cloud-native applications, e-commerce, microservices-based platforms |
 
 
-<br> -  [Chapter 01 - Basics of distributed systems](https://github.com/YasinKar/System-Design/tree/main/chapter_01)
 
-<br> -  [Chapter 02 - Networking](https://github.com/YasinKar/System-Design/tree/main/chapter_02)
-
-<br> -  [Chapter 03 - Storage and databases](https://github.com/YasinKar/System-Design/tree/main/chapter_03)
-
-<br> -  [Chapter 04 - Caching](https://github.com/YasinKar/System-Design/tree/main/chapter_04)
-
-<br> -  [Chapter 05 - API design](https://github.com/YasinKar/System-Design/tree/main/chapter_05)
-
-<br> -  [Chapter 06 - System security](https://github.com/YasinKar/System-Design/tree/main/chapter_06)
-
-<br> -  [Chapter 07 - Monitoring & logging and error management](https://github.com/YasinKar/System-Design/tree/main/chapter_07)
