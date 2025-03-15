@@ -45,4 +45,4 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
 <br> -  [Chapter 08 - Monitoring & logging and error management](https://github.com/YasinKar/System-Design/tree/main/chapter-08)
 
 
-***author*** : [Yasin Karbasi](https://github.com/YasinKar)
+<br><br> ***author*** : [Yasin Karbasi](https://github.com/YasinKar)
