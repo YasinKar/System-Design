@@ -102,7 +102,7 @@ Vertical scaling is often used for applications that are difficult to distribute
 Horizontal scaling involves adding more machines or servers to distribute the load across multiple systems. Instead of upgrading a single server, you increase the number of servers in the system.
 This is typically used for systems designed for distributed computing or systems that need to handle large numbers of users concurrently, such as web applications, microservices, or cloud-based systems.
 
-# Comparison of Vertical Scaling vs Horizontal Scaling
+### Comparison of Vertical Scaling vs Horizontal Scaling
 
 | Feature                   | **Vertical Scaling (Scaling Up)**                               | **Horizontal Scaling (Scaling Out)**                          |
 |---------------------------|-----------------------------------------------------------------|--------------------------------------------------------------|
