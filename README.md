@@ -37,19 +37,19 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
   - [Load Balancing](https://github.com/YasinKar/System-Design/tree/main/chapter-01#load-balancing)
   - [Data Replication & Sharding](https://github.com/YasinKar/System-Design/tree/main/chapter-01#data-replication--sharding)
 
-<br> -  [Chapter 02 - Networking](https://github.com/YasinKar/System-Design/tree/main/chapter-02)
+- [Chapter 02 - Networking](https://github.com/YasinKar/System-Design/tree/main/chapter-02)
 
-<br> -  [Chapter 03 - Storage and databases](https://github.com/YasinKar/System-Design/tree/main/chapter-03)
+- [Chapter 03 - Storage and databases](https://github.com/YasinKar/System-Design/tree/main/chapter-03)
 
-<br> -  [Chapter 04 - Caching](https://github.com/YasinKar/System-Design/tree/main/chapter-04)
+- [Chapter 04 - Caching](https://github.com/YasinKar/System-Design/tree/main/chapter-04)
 
-<br> -  [Chapter 05 - Message Queues و Event-Driven Architecture](https://github.com/YasinKar/System-Design/tree/main/chapter-05)
+- [Chapter 05 - Message Queues و Event-Driven Architecture](https://github.com/YasinKar/System-Design/tree/main/chapter-05)
 
-<br> -  [Chapter 06 - API design](https://github.com/YasinKar/System-Design/tree/main/chapter-06)
+- [Chapter 06 - API design](https://github.com/YasinKar/System-Design/tree/main/chapter-06)
 
-<br> -  [Chapter 07 - System security](https://github.com/YasinKar/System-Design/tree/main/chapter-07)
+- [Chapter 07 - System security](https://github.com/YasinKar/System-Design/tree/main/chapter-07)
 
-<br> -  [Chapter 08 - Monitoring & logging and error management](https://github.com/YasinKar/System-Design/tree/main/chapter-08)
+- [Chapter 08 - Monitoring & logging and error management](https://github.com/YasinKar/System-Design/tree/main/chapter-08)
 
 
 <br><br> ***author*** : [Yasin Karbasi](https://github.com/YasinKar)
