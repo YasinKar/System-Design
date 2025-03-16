@@ -77,3 +77,44 @@ In networking, client-server communication refers to the exchange of data betwee
 | **FTPS**  | Secure file transfer         | Secure file transfers               |
 | **SMTP**  | Email sending protocol       | Sending emails, mail server communication |
 
+## Routing & Proxies in Networking
+In distributed systems and modern networking, routing and proxies play a crucial role in efficiently directing traffic between clients and backend services. Different routing strategies and proxy types help improve scalability, reliability, and load balancing.
+
+### Types of Proxies
+#### **Reverse Proxy**
+A reverse proxy sits in front of backend servers and handles client requests on their behalf.
+
+- **Use Cases**
+  - Load balancing across multiple servers
+  - Caching responses to improve performance
+  - SSL termination to offload encryption from backend servers
+  - Security by hiding internal server details
+- Examples:
+  - NGINX
+  - HAProxy
+  - Envoy Proxy (used in Service Meshes)
+  - Traefik (dynamic routing for microservices)
+
+#### **Forward Proxy**
+A forward proxy sits between clients and the internet, acting as an intermediary for outbound requests.
+
+- **Use Cases**
+  - Hiding client IP addresses (for security or anonymity)
+  - Filtering requests (e.g., blocking access to certain websites)
+  - Caching static content to reduce bandwidth usage
+- **Examples**
+  - Squid Proxy
+  - Shadowsocks (used for bypassing censorship)
+
+#### **API Gateway**
+An API gateway is a reverse proxy designed specifically for API requests. It manages authentication, rate limiting, and routing.
+
+- **Use Cases**
+  - Centralized API management (authentication, security)
+  - Rate limiting & throttling to prevent abuse
+  - Load balancing & failover for microservices
+- **Examples**
+  - Kong
+  - Apigee (Google Cloud API Gateway)
+  - AWS API Gateway
+
