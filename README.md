@@ -28,7 +28,9 @@ To ensure both speed and accuracy, we can implement a **queue-based matchmaking 
 By leveraging Redis, we improve matchmaking efficiency while reducing strain on the database. This ensures a fast, scalable, and accurate player grouping system.
 
 
-<br> -  [Chapter 01 - Basics of distributed systems](https://github.com/YasinKar/System-Design/tree/main/chapter-01)
+<br> 
+-  [Chapter 01 - Basics of distributed systems](https://github.com/YasinKar/System-Design/tree/main/chapter-01)
+  - [What Is Distributed Systems?](https://github.com/YasinKar/System-Design/tree/main/chapter-01#What-Is-Distributed-Systems?)
 
 <br> -  [Chapter 02 - Networking](https://github.com/YasinKar/System-Design/tree/main/chapter-02)
 
