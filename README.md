@@ -28,9 +28,14 @@ To ensure both speed and accuracy, we can implement a **queue-based matchmaking 
 By leveraging Redis, we improve matchmaking efficiency while reducing strain on the database. This ensures a fast, scalable, and accurate player grouping system.
 
 
-<br> 
--  [Chapter 01 - Basics of distributed systems](https://github.com/YasinKar/System-Design/tree/main/chapter-01)
-  - [What Is Distributed Systems?](https://github.com/YasinKar/System-Design/tree/main/chapter-01#What-Is-Distributed-Systems?)
+- [Chapter 01 - Basics of distributed systems](https://github.com/YasinKar/System-Design/tree/main/chapter-01)
+  - [What Is Distributed Systems?](https://github.com/YasinKar/System-Design/tree/main/chapter-01#What-Is-Distributed-Systems)
+  - [CAP Theorem (Consistency, Availability, Partition Tolerance)](https://github.com/YasinKar/System-Design/tree/main/chapter-01#cap-theorem-consistency-availability-partition-tolerance)
+  - [Consistency Models (Strong, Eventual, Weak Consistency)](https://github.com/YasinKar/System-Design/tree/main/chapter-01#consistency-models-strong-eventual-weak-consistency)
+  - [Scalability (Vertical vs. Horizontal Scaling)](https://github.com/YasinKar/System-Design/tree/main/chapter-01#scalability-vertical-vs-horizontal-scaling)
+  - [On-Demand Virtualization Automation](https://github.com/YasinKar/System-Design/tree/main/chapter-01#on-demand-virtualization-automation)
+  - [Load Balancing](https://github.com/YasinKar/System-Design/tree/main/chapter-01#load-balancing)
+  - [Data Replication & Sharding](https://github.com/YasinKar/System-Design/tree/main/chapter-01#data-replication--sharding)
 
 <br> -  [Chapter 02 - Networking](https://github.com/YasinKar/System-Design/tree/main/chapter-02)
 
