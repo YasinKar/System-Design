@@ -137,3 +137,75 @@ Centralized monitoring and automated provisioning simplify administration.
 - **Reduced Deployment Time**
 Enables faster deployment of applications, VMs, and containers with minimal manual configuration.
 
+
+## Load Balancing
+Load Balancing is a crucial concept in designing scalable and distributed systems. The primary goal of a Load Balancer is to distribute incoming requests across multiple servers or services to ensure better performance, higher availability, and prevent overloading a single server.
+
+### Why Use a Load Balancer?
+- **Scalability** – Distributes traffic to multiple servers, increasing system capacity.
+- **Fault Tolerance** – If one server fails, the Load Balancer redirects requests to healthy servers.
+- **Performance Optimization** – Ensures faster request processing by balancing the workload.
+- **Even Load Distribution** – Prevents a single server from being overloaded while others remain underutilized.
+
+### Types of Load Balancing Algorithms
+
+1. **Round Robin** –
+Requests are distributed sequentially across available servers. For example, with three servers A, B, and C:
+Request 1 → A
+Request 2 → B
+Request 3 → C
+Request 4 → A ...
+
+- Pros
+    - Simple and effective for homogeneous servers.
+- Cons
+    - If a server is slower, it may still receive the same number of requests, causing imbalances.
+
+2. **Weighted Round Robin** –
+An improved version of Round Robin where each server is assigned a weight. More powerful servers receive more requests.
+
+- Pros
+    - Suitable for environments with servers of different capacities.
+- Cons
+    - Requires careful weight tuning.
+
+3. **Least Connections** –
+Requests are routed to the server with the fewest active connections. This is ideal for stateful applications where request processing time varies.
+
+- Pros
+    - Ensures fairer load distribution.
+    - Works well for applications with long-running requests.
+- Cons
+    - May increase latency if the system doesn’t handle connection time efficiently.
+ 
+4. **Least Response Time** –
+Requests are sent to the server with the lowest response time, ensuring faster performance.
+
+- Pros
+    - Optimized for speed and responsiveness.
+- Cons
+    - Requires continuous monitoring of response times.
+ 
+5. **IP Hashing** –
+Uses a hashing algorithm on the client’s IP address to consistently route a specific client to the same server.
+
+- Pros
+    - Useful for session-based applications where users should always connect to the same server.
+- Cons
+    - If a server fails, redistributing requests can be difficult.
+ 
+6. **Least Bandwidth** –
+Routes requests to the server with the least amount of bandwidth usage.
+
+- Pros
+    - Ideal for applications that handle large data transfers, such as streaming.
+- Cons
+    - Requires real-time bandwidth monitoring.
+ 
+7. **Random** –
+Requests are distributed randomly among servers.
+
+- Pros
+    - Simple to implement.
+- Cons
+    - May lead to uneven load distribution.
