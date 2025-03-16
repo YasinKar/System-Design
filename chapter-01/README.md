@@ -210,17 +210,6 @@ Requests are distributed randomly among servers.
 - Cons
     - May lead to uneven load distribution.
  
-| **Load Balancing Algorithm** | **How It Works** | **Pros** | **Cons** |
-|-----------------------------|-----------------|----------|----------|
-| **Round Robin** | Distributes requests sequentially to each server in order. | Simple and effective for uniform servers. | Can overload slower servers. |
-| **Weighted Round Robin** | Assigns weights to servers; higher weight = more requests. | Balances uneven server capacities. | Requires manual weight tuning. |
-| **Least Connections** | Sends requests to the server with the fewest active connections. | Prevents overloading a busy server. | High overhead in tracking active connections. |
-| **Least Response Time** | Routes requests to the server with the lowest response time. | Optimizes speed and efficiency. | Requires constant response-time monitoring. |
-| **IP Hashing** | Uses a hash function on the client’s IP to select a server. | Ensures the same client always reaches the same server. | Can lead to uneven load distribution. |
-| **Least Bandwidth** | Sends requests to the server using the least bandwidth. | Great for applications with large data transfers. | Requires real-time bandwidth tracking. |
-| **Random** | Assigns requests to servers randomly. | Easy to implement. | May lead to unbalanced load distribution. |
-
- 
 ## Data Replication & Sharding
 In large-scale distributed systems, Data Replication and Sharding are two essential techniques used to improve performance, scalability, and reliability. While Replication focuses on creating copies of data across multiple nodes for redundancy and availability, Sharding partitions data across multiple nodes to distribute the load efficiently.
 
