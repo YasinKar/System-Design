@@ -174,4 +174,4 @@ Edge networking moves computing and processing closer to end-users instead of re
 | **Example Providers** | Cloudflare, Akamai, AWS CloudFront | Cloudflare Workers, AWS Lambda@Edge |
 
 
-
+<br><br> ***author*** : [Yasin Karbasi](https://github.com/YasinKar)
