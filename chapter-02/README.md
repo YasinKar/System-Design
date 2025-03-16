@@ -1,6 +1,6 @@
 # Chapter 02 - Networking
 
-## Client-Server Communication in Networking
+## Client-Server Communication & Network Protocols
 In networking, client-server communication refers to the exchange of data between a client (e.g., a web browser or mobile app) and a server (e.g., a backend API or database). This communication relies on various protocols, which define how data is transmitted over the network.
 
 ### Common Network Protocols
@@ -117,4 +117,61 @@ An API gateway is a reverse proxy designed specifically for API requests. It man
   - Kong
   - Apigee (Google Cloud API Gateway)
   - AWS API Gateway
+ 
+## Content Delivery Network (CDN) & Edge Networking
+
+### Content Delivery Network (CDN)
+A CDN is a distributed network of servers designed to cache and deliver content (images, videos, scripts, etc.) closer to users.
+
+#### **Why Use a CDN?**
+- Lower Latency – Content is served from the closest server to the user.
+- Reduced Server Load – Caching reduces requests to the origin server.
+- Better Reliability – If one server goes down, traffic is rerouted.
+- Security Benefits – DDoS protection and Web Application Firewalls (WAF).
+
+#### **How it Works?**
+1. A user requests a webpage (e.g., example.com).
+2. DNS routes the request to the nearest CDN server instead of the origin server.
+3. The CDN serves cached static assets (e.g., CSS, JavaScript, images).
+4. If the requested content is not cached, the CDN fetches it from the origin server.
+
+#### **Popular CDN Providers**
+- Cloudflare
+- Akamai
+- Amazon CloudFront
+- Google Cloud CDN
+- Fastly
+
+### Edge Networking
+Edge networking moves computing and processing closer to end-users instead of relying on a central data center.
+
+#### **Why Use Edge Computing?**
+- Ultra-low Latency – Processing happens near the user, reducing round-trip time.
+- Better Scalability – Local processing reduces the load on centralized servers.
+- Real-Time Processing – Ideal for IoT, AI, and interactive applications.
+
+#### **How it Works?**
+1. A request is processed at the edge server instead of traveling to a central data center.
+2. The edge server can perform computations, caching, and filtering before sending data back.
+3. If additional processing is needed, only critical data is sent to the origin.
+
+#### **Edge Networking vs. CDN**
+
+| Feature      | CDN                      | Edge Networking               |
+|-------------|-------------------------|------------------------------|
+| **Purpose**  | Caching & fast content delivery | Localized processing & computing |
+| **Focus**    | Reducing latency for static assets | Processing real-time data near users |
+| **Examples** | Cloudflare CDN, AWS CloudFront | AWS Lambda@Edge, Cloudflare Workers |
+
+#### **Key Differences: CDN vs. Edge Networking**
+
+| Feature          | CDN                        | Edge Networking              |
+|-----------------|---------------------------|------------------------------|
+| **Main Function** | Caches & delivers content | Processes data at the edge   |
+| **Best For**     | Static content (images, JS, CSS) | Real-time apps & IoT  |
+| **Latency Reduction** | Moderate               | Extremely low                |
+| **Computing Power** | No computation          | Edge servers process data    |
+| **Example Providers** | Cloudflare, Akamai, AWS CloudFront | Cloudflare Workers, AWS Lambda@Edge |
+
+
 
