@@ -41,7 +41,7 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
 - [Chapter 02 - Networking](https://github.com/YasinKar/System-Design/tree/main/chapter-02)
   - [Client-Server Communication & Network Protocols](https://github.com/YasinKar/System-Design/tree/main/chapter-02#client-server-communication--network-protocols)
   - [Routing & Proxies in Networking](https://github.com/YasinKar/System-Design/tree/main/chapter-02#routing--proxies-in-networking)
-  - [Content Delivery Network (CDN) & Edge Networking](https://github.com/YasinKar/System-Design/tree/main/chapter-02#content-delivery-network-(CDN)--edge-networking)
+  - [Content Delivery Network (CDN) & Edge Networking](https://github.com/YasinKar/System-Design/tree/main/chapter-02#content-delivery-network-cdn--edge-networking)
 
 - [Chapter 03 - Storage and databases](https://github.com/YasinKar/System-Design/tree/main/chapter-03)
 
