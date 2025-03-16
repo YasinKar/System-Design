@@ -121,3 +121,19 @@ This is typically used for systems designed for distributed computing or systems
 On-demand virtualization automation refers to the process of dynamically creating, managing, and terminating virtual machines (VMs) or containers based on real-time demand. This approach optimizes resource utilization, reduces costs, and enhances scalability without manual intervention.
 In this approach, we create or delete machines and allocate resources to them on demand using scripts.
 
+### Key Benefits
+- **Optimized Resource Utilization**
+Automatically allocates computing resources (CPU, RAM, storage) only when needed, preventing wastage.
+
+- **Cost Efficiency**
+Reduces operational costs by eliminating the need for over-provisioning.
+
+- **Improved Scalability**
+Dynamically scales up or down based on workload demands, ensuring seamless performance.
+
+- **Simplified Infrastructure Management**
+Centralized monitoring and automated provisioning simplify administration.
+
+- **Reduced Deployment Time**
+Enables faster deployment of applications, VMs, and containers with minimal manual configuration.
+
