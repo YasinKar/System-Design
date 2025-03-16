@@ -263,3 +263,52 @@ Writes are acknowledged immediately, and replicas are updated later.
 
 - Pros – Low latency.
 - Cons – Risk of data loss in case of failure.
+
+2. **Sharding (Data Partitioning)**
+Sharding is a technique used to horizontally partition data across multiple database servers to distribute the workload efficiently. Instead of duplicating data, sharding splits it into smaller pieces (shards), each stored on a different node.
+
+### Sharding Strategies
+1. **Hash-based Sharding**
+A hash function is used to distribute records across shards.
+Example: shard_id = hash(user_id) % number_of_shards.
+
+- Pros
+    - Ensures even distribution of data.
+    - Reduces hot-spot issues.
+- Cons
+    - Resharding (adding more shards) is complex because data must be redistributed.
+
+2. **Range-based Sharding**
+Data is divided based on value ranges.
+Example: User IDs 1-1000 → Shard 1, 1001-2000 → Shard 2, etc.
+
+- Pros
+    - Simple to implement.
+    - Efficient for range queries.
+- Cons
+    - Uneven distribution can lead to hot-spot problems (e.g., all recent users in one shard).
+
+3. **Directory-based Sharding**
+A lookup table (directory) maps records to specific shards.
+
+- Pros
+    - Flexible, as new shards can be added easily.
+- Cons
+    - The lookup table becomes a single point of failure and performance bottleneck.
+
+4. **Geo-based Sharding**
+Data is partitioned based on geographical location.
+Example: Users in Europe → European server, US → US server, etc.
+
+- Pros
+    - Reduces latency for users in different regions.
+- Cons
+    - Some regions may have more load than others, requiring dynamic scaling.
+ 
+| **Feature**      | **Replication** | **Sharding** |
+|-----------------|---------------|-------------|
+| **Goal**        | Redundancy & availability | Scalability & load distribution |
+| **Data Copying** | Full copy on multiple nodes | Split data across multiple nodes |
+| **Read Scalability** | High (multiple read replicas) | Depends on query type |
+| **Write Scalability** | Limited (single master bottleneck) | High (data is partitioned) |
+| **Complexity**  | Easier to implement | Harder to reshard dynamically |
