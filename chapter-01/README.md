@@ -213,10 +213,10 @@ Requests are distributed randomly among servers.
 ## Data Replication & Sharding
 In large-scale distributed systems, Data Replication and Sharding are two essential techniques used to improve performance, scalability, and reliability. While Replication focuses on creating copies of data across multiple nodes for redundancy and availability, Sharding partitions data across multiple nodes to distribute the load efficiently.
 
-1. **Data Replication** –
+### Data Replication
 Data Replication is the process of storing copies of the same data on multiple servers or locations to enhance fault tolerance, read scalability, and disaster recovery.
 
-### Types of Data Replication
+#### Types of Data Replication
 1. **Master-Slave Replication (Primary-Replica)** –
 A single master node handles all write operations.
 One or more slave nodes replicate data from the master and handle read requests.
@@ -251,7 +251,7 @@ Instead of a single master, multiple nodes participate in a consensus algorithm 
 - Cons
     - Higher latency due to consensus requirements.
  
-### Replication Strategies
+#### Replication Strategies
 **Synchronous Replication** –
 Writes are committed to all replicas before acknowledging success.
 
@@ -264,10 +264,10 @@ Writes are acknowledged immediately, and replicas are updated later.
 - Pros – Low latency.
 - Cons – Risk of data loss in case of failure.
 
-2. **Sharding (Data Partitioning)** –
+### **Sharding (Data Partitioning)**
 Sharding is a technique used to horizontally partition data across multiple database servers to distribute the workload efficiently. Instead of duplicating data, sharding splits it into smaller pieces (shards), each stored on a different node.
 
-### Sharding Strategies
+#### Sharding Strategies
 1. **Hash-based Sharding** –
 A hash function is used to distribute records across shards.
 Example: shard_id = hash(user_id) % number_of_shards.
