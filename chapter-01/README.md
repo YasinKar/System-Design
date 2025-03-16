@@ -201,7 +201,7 @@ Routes requests to the server with the least amount of bandwidth usage.
     - Ideal for applications that handle large data transfers, such as streaming.
 - Cons
     - Requires real-time bandwidth monitoring.
- 
+
 7. **Random** –
 Requests are distributed randomly among servers.
 
@@ -209,3 +209,57 @@ Requests are distributed randomly among servers.
     - Simple to implement.
 - Cons
     - May lead to uneven load distribution.
+ 
+## Data Replication & Sharding
+In large-scale distributed systems, Data Replication and Sharding are two essential techniques used to improve performance, scalability, and reliability. While Replication focuses on creating copies of data across multiple nodes for redundancy and availability, Sharding partitions data across multiple nodes to distribute the load efficiently.
+
+1. **Data Replication**
+Data Replication is the process of storing copies of the same data on multiple servers or locations to enhance fault tolerance, read scalability, and disaster recovery.
+
+### Types of Data Replication
+1. **Master-Slave Replication (Primary-Replica)**
+A single master node handles all write operations.
+One or more slave nodes replicate data from the master and handle read requests.
+If the master fails, a slave can be promoted to the new master.
+
+- Pros
+    - Improves read performance by distributing queries across multiple replicas.
+    - Provides data redundancy.
+
+- Cons
+    - Write operations are limited to a single master, which can become a bottleneck.
+    - Lag between master and replicas can lead to stale reads.
+
+2. **Master-Master Replication (Active-Active)**
+Multiple nodes act as masters, allowing both read and write operations.
+Changes are synchronized across all nodes, either asynchronously or synchronously.
+
+- Pros
+    - High availability with no single point of failure.
+    - Suitable for geographically distributed applications.
+- Cons
+    - Handling conflicts when two nodes update the same data simultaneously can be complex.
+    - Requires advanced conflict resolution strategies.
+
+3. **Quorum-based Replication (Consensus-driven)**
+Used in distributed databases like Apache Cassandra, Amazon DynamoDB, and Raft-based systems.
+Instead of a single master, multiple nodes participate in a consensus algorithm (e.g., Paxos, Raft) to ensure data consistency.
+
+- Pros
+    - No single point of failure.
+    - Suitable for distributed and decentralized systems.
+- Cons
+    - Higher latency due to consensus requirements.
+ 
+### Replication Strategies
+**Synchronous Replication** –
+Writes are committed to all replicas before acknowledging success.
+
+- Pros – Strong consistency.
+- Cons – High latency.
+
+**Asynchronous Replication** –
+Writes are acknowledged immediately, and replicas are updated later.
+
+- Pros – Low latency.
+- Cons – Risk of data loss in case of failure.
