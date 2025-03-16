@@ -1,4 +1,4 @@
-# Basics of distributed systems
+# Chapter 01 - Basics of distributed systems
 
 ## What Is Distributed Systems?
 in distributed systems, software is divided into independent and scalable components. These components and services collaborate to function as an integrated system. Typically, they are networked and communicate with each other to provide a unified service
@@ -312,3 +312,6 @@ Example: Users in Europe → European server, US → US server, etc.
 | **Read Scalability** | High (multiple read replicas) | Depends on query type |
 | **Write Scalability** | Limited (single master bottleneck) | High (data is partitioned) |
 | **Complexity**  | Easier to implement | Harder to reshard dynamically |
+
+
+<br><br> ***author*** : [Yasin Karbasi](https://github.com/YasinKar)
