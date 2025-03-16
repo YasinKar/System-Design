@@ -213,11 +213,11 @@ Requests are distributed randomly among servers.
 ## Data Replication & Sharding
 In large-scale distributed systems, Data Replication and Sharding are two essential techniques used to improve performance, scalability, and reliability. While Replication focuses on creating copies of data across multiple nodes for redundancy and availability, Sharding partitions data across multiple nodes to distribute the load efficiently.
 
-1. **Data Replication**
+1. **Data Replication** –
 Data Replication is the process of storing copies of the same data on multiple servers or locations to enhance fault tolerance, read scalability, and disaster recovery.
 
 ### Types of Data Replication
-1. **Master-Slave Replication (Primary-Replica)**
+1. **Master-Slave Replication (Primary-Replica)** –
 A single master node handles all write operations.
 One or more slave nodes replicate data from the master and handle read requests.
 If the master fails, a slave can be promoted to the new master.
@@ -230,7 +230,7 @@ If the master fails, a slave can be promoted to the new master.
     - Write operations are limited to a single master, which can become a bottleneck.
     - Lag between master and replicas can lead to stale reads.
 
-2. **Master-Master Replication (Active-Active)**
+2. **Master-Master Replication (Active-Active)** –
 Multiple nodes act as masters, allowing both read and write operations.
 Changes are synchronized across all nodes, either asynchronously or synchronously.
 
@@ -241,7 +241,7 @@ Changes are synchronized across all nodes, either asynchronously or synchronousl
     - Handling conflicts when two nodes update the same data simultaneously can be complex.
     - Requires advanced conflict resolution strategies.
 
-3. **Quorum-based Replication (Consensus-driven)**
+3. **Quorum-based Replication (Consensus-driven)** –
 Used in distributed databases like Apache Cassandra, Amazon DynamoDB, and Raft-based systems.
 Instead of a single master, multiple nodes participate in a consensus algorithm (e.g., Paxos, Raft) to ensure data consistency.
 
@@ -264,11 +264,11 @@ Writes are acknowledged immediately, and replicas are updated later.
 - Pros – Low latency.
 - Cons – Risk of data loss in case of failure.
 
-2. **Sharding (Data Partitioning)**
+2. **Sharding (Data Partitioning)** –
 Sharding is a technique used to horizontally partition data across multiple database servers to distribute the workload efficiently. Instead of duplicating data, sharding splits it into smaller pieces (shards), each stored on a different node.
 
 ### Sharding Strategies
-1. **Hash-based Sharding**
+1. **Hash-based Sharding** –
 A hash function is used to distribute records across shards.
 Example: shard_id = hash(user_id) % number_of_shards.
 
@@ -278,7 +278,7 @@ Example: shard_id = hash(user_id) % number_of_shards.
 - Cons
     - Resharding (adding more shards) is complex because data must be redistributed.
 
-2. **Range-based Sharding**
+2. **Range-based Sharding** –
 Data is divided based on value ranges.
 Example: User IDs 1-1000 → Shard 1, 1001-2000 → Shard 2, etc.
 
@@ -288,7 +288,7 @@ Example: User IDs 1-1000 → Shard 1, 1001-2000 → Shard 2, etc.
 - Cons
     - Uneven distribution can lead to hot-spot problems (e.g., all recent users in one shard).
 
-3. **Directory-based Sharding**
+3. **Directory-based Sharding** –
 A lookup table (directory) maps records to specific shards.
 
 - Pros
@@ -296,7 +296,7 @@ A lookup table (directory) maps records to specific shards.
 - Cons
     - The lookup table becomes a single point of failure and performance bottleneck.
 
-4. **Geo-based Sharding**
+4. **Geo-based Sharding** –
 Data is partitioned based on geographical location.
 Example: Users in Europe → European server, US → US server, etc.
 
