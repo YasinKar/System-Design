@@ -77,7 +77,7 @@ In networking, client-server communication refers to the exchange of data betwee
 | **FTPS**  | Secure file transfer         | Secure file transfers               |
 | **SMTP**  | Email sending protocol       | Sending emails, mail server communication |
 
-## Routing & Proxies in Networking
+## Routing & Proxies In Networking
 In distributed systems and modern networking, routing and proxies play a crucial role in efficiently directing traffic between clients and backend services. Different routing strategies and proxy types help improve scalability, reliability, and load balancing.
 
 ### Types of Proxies
