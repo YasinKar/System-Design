@@ -1,4 +1,4 @@
-# Chapter 01 - Basics of distributed systems
+# Chapter 01 - Basics Of Distributed Systems
 
 ## What Is Distributed Systems?
 in distributed systems, software is divided into independent and scalable components. These components and services collaborate to function as an integrated system. Typically, they are networked and communicate with each other to provide a unified service
