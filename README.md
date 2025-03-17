@@ -29,7 +29,7 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
 
 <br>
 
-- [Chapter 01 - Basics of distributed systems](https://github.com/YasinKar/System-Design/tree/main/chapter-01)
+- [Chapter 01 - Basics Of Distributed Systems](https://github.com/YasinKar/System-Design/tree/main/chapter-01)
   - [What Is Distributed Systems?](https://github.com/YasinKar/System-Design/tree/main/chapter-01#What-Is-Distributed-Systems)
   - [CAP Theorem (Consistency, Availability, Partition Tolerance)](https://github.com/YasinKar/System-Design/tree/main/chapter-01#cap-theorem-consistency-availability-partition-tolerance)
   - [Consistency Models (Strong, Eventual, Weak Consistency)](https://github.com/YasinKar/System-Design/tree/main/chapter-01#consistency-models-strong-eventual-weak-consistency)
@@ -43,7 +43,7 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
   - [Routing & Proxies in Networking](https://github.com/YasinKar/System-Design/tree/main/chapter-02#routing--proxies-in-networking)
   - [Content Delivery Network (CDN) & Edge Networking](https://github.com/YasinKar/System-Design/tree/main/chapter-02#content-delivery-network-cdn--edge-networking)
 
-- [Chapter 03 - Storage and databases](https://github.com/YasinKar/System-Design/tree/main/chapter-03)
+- [Chapter 03 - Storage & Databases](https://github.com/YasinKar/System-Design/tree/main/chapter-03)
 
 - [Chapter 04 - Caching](https://github.com/YasinKar/System-Design/tree/main/chapter-04)
 
