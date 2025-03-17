@@ -65,6 +65,37 @@ SQL databases store data in structured tables with fixed schemas and use SQL (St
 - ERP and CRM Systems
 - Traditional Web Applications
 
+#### **Common SQL Databases**
+**1. MySQL**
+- Open-source and widely used
+- Supports replication and clustering
+- Strong ACID compliance with InnoDB engine
+- Best for: Web applications, e-commerce, banking
+
+**2. PostgreSQL**
+- Advanced open-source database
+- Supports JSON data along with relational tables
+- High concurrency with MVCC (Multi-Version Concurrency Control)
+- Best for: Data analytics, geospatial applications, enterprise apps
+
+3. **Microsoft SQL Server**
+- Developed by Microsoft
+- Supports high availability and business intelligence tools
+- Strong security with encryption and role-based access
+- Best for: Enterprise solutions, Windows-based applications
+
+4. **Oracle Database**
+- High-performance enterprise-grade database
+- Supports partitioning, sharding, and strong security
+- Ideal for large-scale applications with complex transactions
+- Best for: Banking, large-scale enterprise applications
+
+5. **SQLite**
+- Lightweight, serverless database
+- Used for mobile and embedded applications
+- No need for a separate server process
+- Best for: Mobile apps, IoT devices, small-scale apps
+
 ### NoSQL (Non-Relational Databases)
 NoSQL databases are schema-less and can store data in different formats: key-value, document, column-family, and graph databases.
 
@@ -85,6 +116,35 @@ NoSQL databases are schema-less and can store data in different formats: key-val
 - IoT and streaming applications
 - Social media and recommendation systems
 - Content management systems (CMS)
+
+#### **Common SQL Databases**
+
+**1. MongoDB (Document-based)**
+- Stores data in JSON-like BSON format
+- Supports flexible schema and indexing
+- Scales horizontally using sharding
+- Best for: CMS, real-time analytics, IoT
+
+**2. Cassandra (Column-family)**
+- Distributed, highly scalable database
+- Designed for high availability (No single point of failure)
+- Used by companies like Facebook, Netflix
+- Best for: Big data, real-time analytics
+
+**3. Redis (Key-Value Store)**
+- In-memory database for ultra-fast performance
+- Supports caching, pub/sub messaging, and session storage
+- Best for: Caching, gaming leaderboards, real-time data processing
+
+**4. Firebase Firestore (Document-based)**
+- NoSQL database managed by Google
+- Real-time syncing for mobile and web apps
+- Best for: Mobile apps, real-time chat applications
+
+**5. Neo4j (Graph-based)**
+- Optimized for graph-based relationships
+- Uses Cypher Query Language (CQL)
+- Best for: Social networks, recommendation systems, fraud detection
   
 ### SQL vs. NoSQL
 | **Criteria**          | **SQL (Relational)**            | **NoSQL (Non-Relational)**      |
