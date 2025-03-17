@@ -1,9 +1,9 @@
 # System Design
 
-## What Is __System Design__?
+## What is __System Design__?
 System design is the process of designing the architecture of a software system, which involves making decisions about its structure, components, connections, data, and how it will scale. The goal of system design is to build a stable, scalable, accessible, and efficient system that can meet the needs of users well.
 
-## Why System Design Is Important?
+## Why System Design is Important?
 Imagine you are a software engineer tasked with designing a system for managing 10 million players, grouping them into teams of 10 based on their skill level. Given that an average of 10,000 players are online at any given time, querying the database each time a player comes online or goes offline to change it status would be inefficient. Additionally, real-time changes in player status could lead to inaccuracies in matchmaking.
 
 ### Optimized Approach
