@@ -154,3 +154,6 @@ NoSQL databases are schema-less and can store data in different formats: key-val
 | **ACID Compliance**  | Strong (for data integrity)   | Weak (Eventual consistency)    |
 | **Performance**      | Slower for large datasets     | Faster for read-heavy workloads |
 | **Use Case**        | Banking, ERP, CRM, E-commerce | Big Data, Social Media, IoT, Caching |
+
+
+<br><br> ***author*** : [Yasin Karbasi](https://github.com/YasinKar)
