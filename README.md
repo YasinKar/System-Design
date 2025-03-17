@@ -45,7 +45,7 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
 
 - [Chapter 03 - Storage & Databases](https://github.com/YasinKar/System-Design/tree/main/chapter-03)
   - [What is ACID in Databases?](https://github.com/YasinKar/System-Design/tree/main/chapter-03#what-is-acid-in-databases)
-  - [SQL vs. NoSQL](https://github.com/YasinKar/System-Design/tree/main/chapter-02#sql-vs-nosql)
+  - [SQL vs. NoSQL](https://github.com/YasinKar/System-Design/tree/main/chapter-03#sql-vs-nosql)
 
 - [Chapter 04 - Caching](https://github.com/YasinKar/System-Design/tree/main/chapter-04)
 
