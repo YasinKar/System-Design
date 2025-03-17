@@ -13,28 +13,28 @@ Caching is a technique used to store frequently accessed data in a high-speed st
 Caching can be implemented at different layers based on the system's needs:
 
 ### 1. Application Cache
-Stored in memory within the application.
-Example: Caching computed values inside a function.
+- Stored in memory within the application.
+- Example: Caching computed values inside a function.
 
 ### 2. Database Cache
-Reduces redundant queries by caching query results.
-Example: MySQL Query Cache, Redis as a caching layer for databases.
+- Reduces redundant queries by caching query results.
+- Example: MySQL Query Cache, Redis as a caching layer for databases.
 
 ### 3. Content Delivery Network (CDN) Cache
-Stores static assets (CSS, JS, images) at edge locations closer to users.
-Example: Cloudflare, AWS CloudFront, Akamai.
+- Stores static assets (CSS, JS, images) at edge locations closer to users.
+- Example: Cloudflare, AWS CloudFront, Akamai.
 
 ### 4. Distributed Cache
-A shared cache across multiple servers, useful for large-scale applications.
-Example: Redis, Memcached.
+- A shared cache across multiple servers, useful for large-scale applications.
+- Example: Redis, Memcached.
 
 ### 5. Web Cache (Reverse Proxy Cache)
-Caches entire HTTP responses to reduce load on backend servers.
-Example: Nginx, Varnish Cache.
+- Caches entire HTTP responses to reduce load on backend servers.
+- Example: Nginx, Varnish Cache.
 
 ### 6. Client-Side Cache
-Caches data in the browser (cookies, local storage, service workers).
-Example: Browser caching CSS/JS files.
+- Caches data in the browser (cookies, local storage, service workers).
+- Example: Browser caching CSS/JS files.
 
 | Cache Type           | Description                                      | Examples                      | Pros                                      | Cons                                      |
 |----------------------|------------------------------------------------|-------------------------------|-------------------------------------------|-------------------------------------------|
@@ -49,27 +49,27 @@ Example: Browser caching CSS/JS files.
 Since cached data can become outdated, cache invalidation strategies help maintain consistency.
 
 ### 1. Time-to-Live (TTL) Expiry
-Cache items expire after a set time (e.g., 60 seconds).
-Works well for periodically updated data.
-Example: API responses cached for 5 minutes.
+- Cache items expire after a set time (e.g., 60 seconds).
+- Works well for periodically updated data.
+- Example: API responses cached for 5 minutes.
 
 ### 2. Write-Through Cache
-Writes data to both the cache and database simultaneously.
-Ensures data consistency but adds write latency.
-Example: A user profile update is saved in both Redis and PostgreSQL.
+- Writes data to both the cache and database simultaneously.
+- Ensures data consistency but adds write latency.
+- Example: A user profile update is saved in both Redis and PostgreSQL.
 
 ### 3. Write-Back (Lazy Write) Cache
-Data is written to the cache first and asynchronously updated in the database.
-Faster writes but risks data loss if the cache crashes before syncing.
+- Data is written to the cache first and asynchronously updated in the database.
+- Faster writes but risks data loss if the cache crashes before syncing.
 
 ### 4. Cache Eviction (LRU, LFU, FIFO)
-Least Recently Used (LRU) – Removes the least recently accessed item.
-Least Frequently Used (LFU) – Removes the least accessed items over time.
-First-In-First-Out (FIFO) – Removes the oldest cached item first.
+- Least Recently Used (LRU) – Removes the least recently accessed item.
+- Least Frequently Used (LFU) – Removes the least accessed items over time.
+- First-In-First-Out (FIFO) – Removes the oldest cached item first.
 
 ### 5. Manual Invalidation
-Developers explicitly remove or refresh cached data when needed.
-Example: Clearing product cache when inventory is updated.
+- Developers explicitly remove or refresh cached data when needed.
+- Example: Clearing product cache when inventory is updated.
 
 | Strategy           | Description                                   | Pros                                      | Cons                                      | Best Use Case |
 |--------------------|-----------------------------------------------|-------------------------------------------|-------------------------------------------|--------------|
