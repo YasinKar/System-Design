@@ -1,9 +1,9 @@
-# Chapter 01 - Basics Of Distributed Systems
+# Chapter 01 - Basics of Distributed Systems
 
-## What Is Distributed Systems?
+## What is Distributed Systems?
 in distributed systems, software is divided into independent and scalable components. These components and services collaborate to function as an integrated system. Typically, they are networked and communicate with each other to provide a unified service
 
-### Features of distributed systems
+### Features of Distributed Systems
 - **Transparency** – Users should not be aware that the system consists of multiple nodes. Transparency applies to access, location, migration, concurrency, and failure handling.
 
 - **Scalability** – The system should efficiently accommodate an increasing number of nodes without performance degradation.
@@ -216,7 +216,7 @@ In large-scale distributed systems, Data Replication and Sharding are two essent
 ### Data Replication
 Data Replication is the process of storing copies of the same data on multiple servers or locations to enhance fault tolerance, read scalability, and disaster recovery.
 
-#### Types of Data Replication
+#### **Types of Data Replication**
 1. **Master-Slave Replication (Primary-Replica)** –
 A single master node handles all write operations.
 One or more slave nodes replicate data from the master and handle read requests.
@@ -251,7 +251,7 @@ Instead of a single master, multiple nodes participate in a consensus algorithm 
 - Cons
     - Higher latency due to consensus requirements.
  
-#### Replication Strategies
+#### **Replication Strategies**
 **Synchronous Replication** –
 Writes are committed to all replicas before acknowledging success.
 
@@ -264,10 +264,10 @@ Writes are acknowledged immediately, and replicas are updated later.
 - Pros – Low latency.
 - Cons – Risk of data loss in case of failure.
 
-### **Sharding (Data Partitioning)**
+### Sharding (Data Partitioning)
 Sharding is a technique used to horizontally partition data across multiple database servers to distribute the workload efficiently. Instead of duplicating data, sharding splits it into smaller pieces (shards), each stored on a different node.
 
-#### Sharding Strategies
+#### **Sharding Strategies**
 1. **Hash-based Sharding** –
 A hash function is used to distribute records across shards.
 Example: shard_id = hash(user_id) % number_of_shards.
