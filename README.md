@@ -48,6 +48,9 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
   - [SQL vs. NoSQL](https://github.com/YasinKar/System-Design/tree/main/chapter-03#sql-vs-nosql)
 
 - [Chapter 04 - Caching](https://github.com/YasinKar/System-Design/tree/main/chapter-04)
+    - [What is Caching?](https://github.com/YasinKar/System-Design/tree/main/chapter-04#what-is-caching)
+    - [Types of Cache](https://github.com/YasinKar/System-Design/tree/main/chapter-04#types-of-cache)
+    - [Cache Invalidation Strategies](https://github.com/YasinKar/System-Design/tree/main/chapter-04#cache-invalidation-strategies)
 
 - [Chapter 05 - Message Queues و Event-Driven Architecture](https://github.com/YasinKar/System-Design/tree/main/chapter-05)
 
