@@ -66,7 +66,10 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
     - [Encryption](https://github.com/YasinKar/System-Design/tree/main/chapter-07#encryption)
     - [Common Vulnerabilities](https://github.com/YasinKar/System-Design/tree/main/chapter-07#common-vulnerabilities)
 
-- [Chapter 08 - Monitoring & logging and error management](https://github.com/YasinKar/System-Design/tree/main/chapter-08)
+- [Chapter 08 - Monitoring & Logging and Error Management](https://github.com/YasinKar/System-Design/tree/main/chapter-08)
+    - [Observability](https://github.com/YasinKar/System-Design/tree/main/chapter-08#observability)
+    - [Encryption](https://github.com/YasinKar/System-Design/tree/main/chapter-08#monitoring-tools)
+    - [Fault Tolerance & Circuit Breaker Pattern](https://github.com/YasinKar/System-Design/tree/main/chapter-07#fault-tolerance--circuit-breaker-pattern)
 
 
 <br><br> ***author*** : [Yasin Karbasi](https://github.com/YasinKar)
