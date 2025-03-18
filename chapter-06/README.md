@@ -61,4 +61,33 @@ Throttling is the process of slowing down or delaying excessive requests from a 
 | **Response**  | Rejects requests when limit exceeds | Allows requests but with delay |
 | **Example Use Case** | API quota enforcement | Avoiding server overload |
 
+## Service Mesh & API Gateway
+
+### Service Mesh
+A service mesh manages service-to-service communication in microservices. It handles traffic routing, security, and observability.
+
+#### **Key Features**
+- Traffic control: Load balancing, retries, circuit breaking.
+- Security: Mutual TLS, authentication, and authorization.
+- Observability: Logging, monitoring, and tracing.
+
+#### **Common Service Meshes**
+- Istio
+- Linkerd
+- Consul
+
+### API Gateway
+An API Gateway is a reverse proxy that manages API traffic between clients and services. It handles authentication, rate limiting, and request transformation.
+
+#### **Key Features**
+- Authentication & Security: JWT, OAuth, API keys.
+- Traffic Control: Load balancing, caching, rate limiting.
+- Protocol Translation: Converts between REST, GraphQL, gRPC, etc.
+
+#### **Common API Gateways**
+- Kong
+- NGINX API Gateway
+- AWS API Gateway
+- Traefik
+
 <br><br> ***author*** : [Yasin Karbasi](https://github.com/YasinKar)
