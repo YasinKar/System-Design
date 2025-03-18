@@ -52,7 +52,9 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
     - [Types of Cache](https://github.com/YasinKar/System-Design/tree/main/chapter-04#types-of-cache)
     - [Cache Invalidation Strategies](https://github.com/YasinKar/System-Design/tree/main/chapter-04#cache-invalidation-strategies)
 
-- [Chapter 05 - Message Queues و Event-Driven Architecture](https://github.com/YasinKar/System-Design/tree/main/chapter-05)
+- [Chapter 05 - Message Queues & Event-Driven Architecture](https://github.com/YasinKar/System-Design/tree/main/chapter-05)
+    - [Event-Driven Architecture (EDA)](https://github.com/YasinKar/System-Design/tree/main/chapter-05#event-driven-architecture-eda)
+    - [Message Queues](https://github.com/YasinKar/System-Design/tree/main/chapter-05#message-queues)
 
 - [Chapter 06 - API design](https://github.com/YasinKar/System-Design/tree/main/chapter-06)
 
