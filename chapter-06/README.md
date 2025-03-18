@@ -1,34 +1,34 @@
 # Chapter 06 - API Design
 
-## What is API Design
+## API Design and Its Types
 API (Application Programming Interface) design refers to the process of structuring how different software components interact. The goal is to create APIs that are scalable, maintainable, and easy to use. There are several types of API architectures, each serving different use cases.
 
-## Types of APIs
+### Types of APIs
 
-### REST (Representational State Transfer)
+#### **REST (Representational State Transfer)**
 - Uses HTTP methods (GET, POST, PUT, DELETE).
 - Works with standard formats like JSON and XML.
 - Stateless (each request must contain all necessary information).
 - Scalable and widely used for web applications.
 
-### GraphQL
+#### **GraphQL**
 - Clients specify the exact data they need.
 - Single endpoint (/graphql) handles all requests.
 - Reduces over-fetching and under-fetching of data.
 - Ideal for complex data relationships and frontend-driven applications.
 
-### gRPC (Google Remote Procedure Call)
+#### **gRPC (Google Remote Procedure Call)**
 - Uses HTTP/2 and Protocol Buffers (protobuf) for efficient data exchange.
 - Supports bi-directional streaming.
 - Faster and more efficient than REST for high-performance applications.
 - Best for microservices and low-latency systems.
 
-### SOAP (Simple Object Access Protocol)
+#### **SOAP (Simple Object Access Protocol)**
 - Uses XML for message format.
 - Stronger security and reliability features (e.g., WS-Security).
 - Used in enterprise applications (e.g., banking, healthcare).
 
-### WebSockets
+#### **WebSockets**
 - Enables real-time communication with persistent connections.
 - Ideal for applications requiring instant data updates (e.g., chat apps, stock market).
 - 
