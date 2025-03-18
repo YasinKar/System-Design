@@ -61,7 +61,10 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
     - [Rate Limiting & Throttling](https://github.com/YasinKar/System-Design/tree/main/chapter-06#rate-limiting--throttling)
     - [Service Mesh & API Gateway](https://github.com/YasinKar/System-Design/tree/main/chapter-06#service-mesh--api-gateway)
 
-- [Chapter 07 - System security](https://github.com/YasinKar/System-Design/tree/main/chapter-07)
+- [Chapter 07 - System Security](https://github.com/YasinKar/System-Design/tree/main/chapter-07)
+    - [Authentication & Authorization](https://github.com/YasinKar/System-Design/tree/main/chapter-07#authentication--authorization)
+    - [Encryption](https://github.com/YasinKar/System-Design/tree/main/chapter-07#encryption)
+    - [Common Vulnerabilities](https://github.com/YasinKar/System-Design/tree/main/chapter-07#common-vulnerabilities)
 
 - [Chapter 08 - Monitoring & logging and error management](https://github.com/YasinKar/System-Design/tree/main/chapter-08)
 
