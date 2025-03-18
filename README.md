@@ -58,8 +58,8 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
 
 - [Chapter 06 - API Design](https://github.com/YasinKar/System-Design/tree/main/chapter-06)
     - [API Design and Its Types](https://github.com/YasinKar/System-Design/tree/main/chapter-06#api-design-and-its-types)
-    - [Rate Limiting & Throttling](https://github.com/YasinKar/System-Design/tree/main/chapter-06#rate-limiting-&-throttling)
-    - [Service Mesh & API Gateway](https://github.com/YasinKar/System-Design/tree/main/chapter-06#service-mesh-&-api-gateway)
+    - [Rate Limiting & Throttling](https://github.com/YasinKar/System-Design/tree/main/chapter-06#rate-limiting--throttling)
+    - [Service Mesh & API Gateway](https://github.com/YasinKar/System-Design/tree/main/chapter-06#service-mesh--api-gateway)
 
 - [Chapter 07 - System security](https://github.com/YasinKar/System-Design/tree/main/chapter-07)
 
