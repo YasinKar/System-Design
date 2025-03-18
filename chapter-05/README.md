@@ -1,4 +1,4 @@
-Chapter 05 - Message Queues & Event-Driven Architecture
+# Chapter 05 - Message Queues & Event-Driven Architecture
 
 ## Message Queues
 A Message Queue (MQ) is a communication mechanism used in distributed systems to enable the asynchronous exchange of messages between different services or components. It decouples the sender and receiver, meaning that the sender does not have to wait for the receiver to process the message. Instead, the message is placed in a queue, and the receiver can process it at its own pace.
@@ -75,3 +75,5 @@ Payment Processing: Once a payment is confirmed, the system can trigger events l
 
 6. **Log Aggregation:**
 Logs from different services generate events that are consumed by a centralized log processing service to provide analytics and monitoring.
+
+<br><br> ***author*** : [Yasin Karbasi](https://github.com/YasinKar)
