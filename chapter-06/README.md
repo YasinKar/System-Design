@@ -90,4 +90,11 @@ An API Gateway is a reverse proxy that manages API traffic between clients and s
 - AWS API Gateway
 - Traefik
 
+| Feature          | Service Mesh                   | API Gateway                  |
+|-----------------|--------------------------------|------------------------------|
+| **Scope**       | Service-to-service communication | Client-to-service communication |
+| **Traffic Handling** | Internal (within microservices) | External (from clients) |
+| **Security**    | Mutual TLS, service identity   | Authentication, authorization |
+| **Observability** | Service-level monitoring    | API-level logging |
+
 <br><br> ***author*** : [Yasin Karbasi](https://github.com/YasinKar)
