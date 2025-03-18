@@ -71,5 +71,4 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
     - [Encryption](https://github.com/YasinKar/System-Design/tree/main/chapter-08#monitoring-tools)
     - [Fault Tolerance & Circuit Breaker Pattern](https://github.com/YasinKar/System-Design/tree/main/chapter-08#fault-tolerance--circuit-breaker-pattern)
 
-
 <br><br> ***author*** : [Yasin Karbasi](https://github.com/YasinKar)
