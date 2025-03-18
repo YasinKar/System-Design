@@ -60,3 +60,5 @@ Throttling is the process of slowing down or delaying excessive requests from a 
 | **Purpose**   | Restrict requests          | Slow down requests          |
 | **Response**  | Rejects requests when limit exceeds | Allows requests but with delay |
 | **Example Use Case** | API quota enforcement | Avoiding server overload |
+
+<br><br> ***author*** : [Yasin Karbasi](https://github.com/YasinKar)
