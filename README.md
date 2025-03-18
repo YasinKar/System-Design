@@ -30,7 +30,7 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
 <br>
 
 - [Chapter 01 - Basics Of Distributed Systems](https://github.com/YasinKar/System-Design/tree/main/chapter-01)
-  - [What Is Distributed Systems?](https://github.com/YasinKar/System-Design/tree/main/chapter-01#What-Is-Distributed-Systems)
+  - [What is Distributed Systems?](https://github.com/YasinKar/System-Design/tree/main/chapter-01#what-is-distributed-systems)
   - [CAP Theorem (Consistency, Availability, Partition Tolerance)](https://github.com/YasinKar/System-Design/tree/main/chapter-01#cap-theorem-consistency-availability-partition-tolerance)
   - [Consistency Models (Strong, Eventual, Weak Consistency)](https://github.com/YasinKar/System-Design/tree/main/chapter-01#consistency-models-strong-eventual-weak-consistency)
   - [Scalability (Vertical vs. Horizontal Scaling)](https://github.com/YasinKar/System-Design/tree/main/chapter-01#scalability-vertical-vs-horizontal-scaling)
@@ -56,7 +56,10 @@ By leveraging Redis, we improve matchmaking efficiency while reducing strain on 
     - [Event-Driven Architecture (EDA)](https://github.com/YasinKar/System-Design/tree/main/chapter-05#event-driven-architecture-eda)
     - [Message Queues](https://github.com/YasinKar/System-Design/tree/main/chapter-05#message-queues)
 
-- [Chapter 06 - API design](https://github.com/YasinKar/System-Design/tree/main/chapter-06)
+- [Chapter 06 - API Design](https://github.com/YasinKar/System-Design/tree/main/chapter-06)
+    - [API Design and Its Types](https://github.com/YasinKar/System-Design/tree/main/chapter-06#api-design-and-its-types)
+    - [Rate Limiting & Throttling](https://github.com/YasinKar/System-Design/tree/main/chapter-06#rate-limiting-&-throttling)
+    - [Service Mesh & API Gateway](https://github.com/YasinKar/System-Design/tree/main/chapter-06#service-mesh-&-api-gateway)
 
 - [Chapter 07 - System security](https://github.com/YasinKar/System-Design/tree/main/chapter-07)
 
